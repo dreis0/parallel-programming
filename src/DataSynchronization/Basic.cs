@@ -57,10 +57,8 @@ namespace parallel_programming.DataSynchronization
             var tasks = new List<Task>();
             var conta = new T();
 
-            //Depósitos
             for (int i = 0; i < 10; i++)
             {
-
                 tasks.Add(Task.Factory.StartNew(() =>
                {
                    for (int i = 0; i < 1000; i++)
